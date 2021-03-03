@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DIU CGPA CALCULATOR</string>
+    <string name="category">Category</string>
+    <string name="semester_wise">Semester Wise</string>
+    <string name="course_wise">Course Wise</string>
+    <string name="add_semester_gpa_and_credit_list">Add Semester GPA and Credit List:</string>
+    <string name="add_course_gpa_and_credit_list">Add Course GPA and Credit List:</string>
+    <string name="add">ADD</string>
+    <string name="credit">Credit</string>
+    <string name="course_code_name">Course Name</string>
+    <string name="gpa">SGPA</string>
+    <string name="submit_list">Submit List</string>
+</resources>

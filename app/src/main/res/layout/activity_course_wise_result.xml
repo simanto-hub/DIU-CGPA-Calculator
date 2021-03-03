@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CourseWiseResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total CGPA:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@drawable/round_secondary_white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/course_wise_cgpaTV"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@drawable/round_primary"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultListTitleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result List:"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/purple_800"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/course_nameBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Number/title"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@drawable/round_primary"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Credit"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@drawable/round_secondary_white"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/gradeTV"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Grade"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@drawable/round_secondary_white"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerView_course"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
